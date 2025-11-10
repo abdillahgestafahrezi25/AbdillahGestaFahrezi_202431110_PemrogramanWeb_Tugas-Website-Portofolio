@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+}
+
+.hero img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+section {
+    padding: 20px;
+}
+
+.skills ul {
+    list-style: square;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #1976d2;
+    color: white;
+}
+
+form {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e88e5;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+    }
+    table {
+        font-size: 0.9em;
+    }
+}
